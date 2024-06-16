@@ -1,0 +1,126 @@
+.navbar{
+    background: rgb(30,30, 30) ;
+    height: 5rem;
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0 auto ;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+
+}
+
+
+/* .destopMenuItemList{
+
+    margin: 1rem;
+    cursor: pointer;
+} */
+
+/* new css hover style  */
+
+.destopMenuItemList{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+  .destopMenuItemList:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .destopMenuItemList:hover::after{
+    width:100%;
+  }
+
+.desktopMenuBtn{
+    border: none;
+    background:white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+.destopMenuImg{
+
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+.active{
+  color:yellow;
+
+}
+
+.naveMenu{
+position: absolute;
+top: 4rem;
+right: 2rem;
+z-index: 2;
+display: flex;
+flex-direction: column;
+padding: 0.5rem;
+height: fit-content;
+min-width: 15rem;
+background: rgb(40,40,40);
+border-radius: 1rem;
+
+}
+
+.ItemList{
+color: white;
+padding: 0.5rem 3rem;
+margin: 0.25rem;
+background: rgb(30,30,30);
+
+}
+
+.mobMenu{
+display: none;
+object-fit: cover;
+height: 1.8rem;
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+  .mobMenu{
+    display: flex;
+  }
+
+  .destopMenu {
+    display: none;
+  }
+
+  .desktopMenuBtn {
+    display: none;
+  }
+}
